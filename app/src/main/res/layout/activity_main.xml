@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/numberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint=""
+        android:inputType="phone"
+        android:outlineAmbientShadowColor="#C1BABA"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberInput"
+        android:layout_marginHorizontal="2px"
+        android:layout_marginTop="16dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:rowCount="4">
+
+        <!-- Dial Pad Buttons -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="0"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="1"
+            android:textSize="18sp" />
+
+        <!-- Define other buttons similarly for digits 2 to 9 -->
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="2"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="3"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="4"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="5"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="6"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="7"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="8"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="*"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="9"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:onClick="onDigitButtonClick"
+            android:text="#"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2px"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:maxWidth="120dp"
+            android:minWidth="88dip"
+            android:onClick="onDeleteButtonClick"
+            android:text="X"
+            android:textSize="18sp" />
+
+        <!-- Call Decline Button -->
+        <Button
+            android:id="@+id/buttonCallDecline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="2px"
+            android:backgroundTint="#08800D"
+
+            android:gravity="center|right|center_vertical"
+            android:onClick="onDeclineButtonClick"
+            android:text="Dial"
+            android:textSize="18sp" />
+    </GridLayout>
+</RelativeLayout>
